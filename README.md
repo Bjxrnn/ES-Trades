@@ -1,5 +1,5 @@
 # ES Trades
-#### Video Demo:  [https://youtu.be/TaR-1qj-5b0]
+
 #### Description:
 ES Trades is an extented version of C$50 Finance. ES Trades is a web application where users can manage a portfolio of stocks. This application allows users to track live market prices and to practice trading in a stock market without using real money. This web application uses HTML, CSS, Javascript and jinja for the frontend, Python for the backend, SQLITE for the database and Flask for the framework. The real time stock data is taken from the Finnhub API.
 
