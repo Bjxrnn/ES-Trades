@@ -11,7 +11,7 @@ There are 3 tables in the database used in this web application:
 Here are some features of ES Trades!
 1. Registration/Login
 Users are able to register for an account with a unique username and password and are able to login into said account once registered where each of the user's portolio data are saved. The registration function will check if the username has already been taken, if the confirm password matches the password and the login function will check if the username password is correct.
-![plot](ES-Trades/images/register.png)
+![plot](images/register.png)
 
 2. Portfolio
 Users are able to view the current market price, the number of shares users are holding, average purchase cost and open profit and loss of each stock in the users portfolio which are imported from the holdings database. The current market price is constantly updated in real time whenever the page is refreshed. The total market value, total open profit and loss and cash holdings are also shown. A Google pie chart of the user's portolio allocation can also be viewed on this page where each stock is organized and data is shown as a percentage of a whole. A buy and sell button is also available for users are also able to purchase or sell the stocks they are holding.
