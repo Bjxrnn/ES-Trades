@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Settings
+{% endblock %}
+
+{% block main %}
+    <h4>Update Cash:</h4>
+    <p>You currently have {{cash}}.</p>
+    <form action="/settings" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="updatecash" placeholder="Update Cash" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Update Cash</button>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <h4>Update Password</h4>
+    <br>
+    <form action="/updatepassword" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="oldpassword" placeholder="Old Password" type="password">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="newpassword" placeholder="New Password" type="password">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="confirmpassword" placeholder="Confirm password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Update Password</button>
+    </form>
+{% endblock %}

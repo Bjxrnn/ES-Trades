@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+<h4>Total Cash: ${{cash}}</h4>
+{% if quote is not defined %}
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto"  name="symbol" placeholder="Stock Symbol" type="text">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Search Stock</button>
+        </div>
+    </form>
+    <br>
+    <div class="mb-3">
+        <h4>Popular Stock List</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Industry</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- TODO: Loop through the database entries to display them in this table -->
+                {% for stocklist in stocklist %}
+                <tr>
+                    <td>{{stocklist.Symbol}}</td>
+                    <td>{{stocklist.Name}}</td>
+                    <td>{{stocklist.Industry}}</td>
+                    <td width = "20">
+                        <form action="/quote" method="post">
+                            <input name="symbol" type="hidden" value="{{stocklist.Symbol}}">
+                            <button class="action-btn" type="submit" title="View Stock">View</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endif %}
+    <div class="section">
+        {% if quote is defined %}
+            {{quote.symbol}} current share price: ${{price}}
+            <p>You can afford {{cash // price | int}} shares.</p>
+            <form action="/buy" method="post">
+                <input name="symbol" type="hidden" value="{{quote.symbol}}" />
+                <div class="mb-3">
+                    <input width="150" autocomplete="off" name="shares" placeholder="Number of Shares" type="number" min="0">
+
+                    <button class="btn btn-primary" type="submit">Buy Stock</button>
+                </div>
+            </form>
+            <iframe
+            referrerpolicy="origin"
+            width="70%"
+            height="500"
+            style="background: #FFFFFF; padding: 10px; border: none; border-radius: 5px; box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)"
+            src="https://jika.io/embed/area-chart?symbol={{quote.symbol}}&selection=one_year&closeKey=close&boxShadow=true&graphColor=1652f0&textColor=161c2d&backgroundColor=FFFFFF&fontFamily=Nunito"
+            ></iframe>
+        {% endif %}
+
+    </div>
+{% endblock %}

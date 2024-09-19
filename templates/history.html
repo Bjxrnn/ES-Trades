@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <form action="/" method="get">
+        <div class="mb-3">
+            <h4>History</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Transaction Type</th>
+                        <th>Shares</th>
+                        <th>Price</th>
+                        <th>Transacted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- TODO: Loop through the database entries to display them in this table -->
+                    {% for history in history %}
+                    <tr>
+                        <td>${{history.symbol.upper()}}</td>
+                        <td>{{history.type}}</td>
+                        <td>{{history.quantity}}</td>
+                        <td>{{history.cost}}</td>
+                        <td>{{history.time}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </form>
+{% endblock %}

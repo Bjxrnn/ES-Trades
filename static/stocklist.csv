@@ -1,0 +1,20 @@
+Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,IPO Year,Volume,Sector,Industry
+AAPL,Apple Inc. Common Stock,$220.82 ,-1.56,-0.70%,3.35738E+12,United States,1980,48382533,Technology,Computer Manufacturing
+MSFT,Microsoft Corporation Common Stock,$401.70 ,-6.69,-1.64%,2.98585E+12,United States,1986,19382200,Technology,Computer Software: Prepackaged Software
+NVDA,NVIDIA Corporation Common Stock,$102.83 ,-4.38,-4.09%,2.52242E+12,United States,1999,411673620,Technology,Semiconductors
+GOOG,Alphabet Inc. Class C Capital Stock,$152.13 ,-6.47,-4.08%,1.87272E+12,United States,2004,24983974,Technology,Computer Software: Programming Data Processing
+GOOGL,Alphabet Inc. Class A Common Stock,$150.92 ,-6.32,-4.02%,1.85783E+12,United States,2004,37379442,Technology,Computer Software: Programming Data Processing
+AMZN,Amazon.com Inc. Common Stock,$171.39 ,-6.5,-3.65%,1.79884E+12,United States,1997,41173725,Consumer Discretionary,Catalog/Specialty Distribution
+META,Meta Platforms Inc. Class A Common Stock,$500.27 ,-16.59,-3.21%,1.26559E+12,United States,2012,14732367,Technology,Computer Software: Programming Data Processing
+BRK/A,Berkshire Hathaway Inc.,"$689,286.63 ",-6873.37,-0.99%,1.01385E+12,United States,,2025,,Insurance - Diversified
+BRK/B,Berkshire Hathaway Inc.,$459.42 ,-5.5,-1.18%,1.01362E+12,United States,,4396652,,Insurance - Diversified
+LLY,Eli Lilly and Company Common Stock,$902.71 ,-10.04,-1.10%,8.57959E+11,United States,,3437843,Health Care,Biotechnology: Pharmaceutical Preparations
+TSM,Taiwan Semiconductor Manufacturing Company Ltd.,$156.82 ,-6.88,-4.20%,8.13333E+11,Taiwan,1997,14949590,Technology,Semiconductors
+TSLA,Tesla Inc. Common Stock,$210.73 ,-19.44,-8.45%,6.73207E+11,United States,2010,111643250,Consumer Discretionary,Auto Manufacturing
+AVGO,Broadcom Inc. Common Stock,$137.00 ,-15.825,-10.36%,6.37696E+11,United States,2009,76554702,Technology,Semiconductors
+WMT,Walmart Inc. Common Stock,$76.64 ,-0.32,-0.42%,6.16052E+11,United States,,14545330,Consumer Discretionary,Department/Specialty Retail Stores
+JPM,JP Morgan Chase & Co. Common Stock,$212.46 ,-5.17,-2.38%,6.04484E+11,United States,,7774425,Finance,Major Banks
+NVO,Novo Nordisk A/S Common Stock,$131.14 ,0.25,0.19%,5.85177E+11,Denmark,,2590685,Health Care,Biotechnology: Pharmaceutical Preparations
+UNH,UnitedHealth Group Incorporated Common Stock (DE),$596.88 ,1.39,0.23%,5.5117E+11,United States,,2925751,Health Care,Medical Specialities
+V,Visa Inc.,$279.37 ,0.75,0.27%,5.09098E+11,United States,,7187627,Consumer Discretionary,Business Services
+XOM,Exxon Mobil Corporation Common Stock,$112.64 ,-0.53,-0.47%,5.0044E+11,United States,,13465917,Energy,Integrated oil Companies
