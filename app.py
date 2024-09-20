@@ -344,6 +344,10 @@ def register():
         elif not request.form.get("password"):
             return apology("must provide password", 400)
 
+        # Ensure username and password is at least 8 characters long
+        if len(request.form.get("username")) < 8 or len(request.form.get("password")) < 8:
+            return apology("password/username has to be at least 8 characters long", 400)
+
         # Query database for username
         rows = db.execute(
             "SELECT * FROM users WHERE username = ?", request.form.get("username")
