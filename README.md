@@ -45,8 +45,8 @@ Users are able to update their current cash holdings and change their passwords.
 ![plot](images/settings.png)
 
 
-## How to use:
-1] Star and clone the repository to your machine.
-2] Run the command pip install -r requirements.txt
-3] Once all the dependencies have been installed, run the command "flask run"
-4] This should start a local server and you can access it on your browser.
+# How to use:
+1) Star and clone the repository to your machine.
+2) Run the command "pip install -r requirements.txt"
+3) Once all the dependencies have been installed, run the command "flask run"
+4) This should start a local server and you can access it on your browser.
