@@ -20,13 +20,13 @@
     <br>
     <form action="/updatepassword" method="post">
         <div class="mb-3">
-            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="oldpassword" placeholder="Old Password" type="password">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="oldpassword" placeholder="Old Password" type="password" min="8">
         </div>
         <div class="mb-3">
-            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="newpassword" placeholder="New Password" type="password">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="newpassword" placeholder="New Password" type="password" min="8">
         </div>
         <div class="mb-3">
-            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="confirmpassword" placeholder="Confirm password" type="password">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="confirmpassword" placeholder="Confirm password" type="password" min="8">
         </div>
         <button class="btn btn-primary" type="submit">Update Password</button>
     </form>
