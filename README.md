@@ -47,6 +47,7 @@ Users are able to update their current cash holdings and change their passwords.
 
 # How to use:
 1) Star and clone the repository to your machine.
-2) Run the command "pip install -r requirements.txt"
-3) Once all the dependencies have been installed, run the command "flask run"
-4) This should start a local server and you can access it on your browser.
+2) Go to https://finnhub.io/ and get your free API key. Create a new file in the folder called "creds.py" and type "api_key='[PASTE YOUR API KEY HERE]'" in the file.
+3) Run the command "pip install -r requirements.txt"
+4) Once all the dependencies have been installed, run the command "python -m flask run"
+5) This should start a local server and you can access it on your browser.
