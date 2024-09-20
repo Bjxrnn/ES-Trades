@@ -146,6 +146,8 @@ def updatepassword():
     # Check for user error
     if not currentPassword or not newPassword or not confirmPassword:
         return apology("missing fields")
+    if len(newPassword) < 8:
+            return apology("password has to be at least 8 characters long", 400)
     elif not check_password_hash(oldPassword[0]["hash"], request.form.get("oldpassword")):
         return apology("invalid current password")
     elif newPassword != confirmPassword:
@@ -263,6 +265,10 @@ def login():
         elif not request.form.get("password"):
             return apology("must provide password", 403)
 
+        # Ensure username and password are at least 6 and 8 characters long respectively
+        if len(request.form.get("username")) < 6 or len(request.form.get("password")) < 8:
+            return apology("username and password has to be at least 6 and 8 characters long respectively", 400)
+            
         # Query database for username
         rows = db.execute(
             "SELECT * FROM users WHERE username = ?", request.form.get("username")
@@ -344,9 +350,9 @@ def register():
         elif not request.form.get("password"):
             return apology("must provide password", 400)
 
-        # Ensure username and password is at least 8 characters long
-        if len(request.form.get("username")) < 8 or len(request.form.get("password")) < 8:
-            return apology("password/username has to be at least 8 characters long", 400)
+        # Ensure username and password are at least 6 and 8 characters long respectively
+        if len(request.form.get("username")) < 6 or len(request.form.get("password")) < 8:
+            return apology("username and password has to be at least 6 and 8 characters long respectively", 400)
 
         # Query database for username
         rows = db.execute(
